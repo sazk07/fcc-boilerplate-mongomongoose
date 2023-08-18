@@ -14,7 +14,7 @@ const personSchema = new Schema({
   favoriteFoods: { type: [String] }
 })
 
-let Person = mongoose.model("Person", personSchema)
+const Person = mongoose.model("Person", personSchema)
 
 const createAndSavePerson = (done) => {
   const bob = new Person({
